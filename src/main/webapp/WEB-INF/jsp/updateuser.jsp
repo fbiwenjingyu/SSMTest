@@ -12,23 +12,23 @@
         <table>
             <tr>
                 <td><label>id:</label></td>
-                <td><input type="text" id="id" name="id" value="${user_id}" readonly="readonly"/>
+                <td><input type="text" id="id" name="id" value="${user.id}" readonly="readonly"/>
             </tr>
             <tr>
                 <td><label>username:</label></td>
-                <td><input type="text" id="username" name="username" />
+                <td><input type="text" id="username" name="username"  value="${user.username}"/>
             </tr>
             <tr>
                 <td><label>password:</label></td>
-                <td><input type="password" id="password" name="password" />
+                <td><input type="password" id="password" name="password" value="${user.password}"/>
             </tr>
             <tr>
                 <td><label>sex:</label></td>
-                <td><input type="text" id="sex" name="sex" />
+                <td><input type="text" id="sex" name="sex" value="${user.sex}"/>
             </tr>
             <tr>
                 <td><label>age:</label></td>
-                <td><input type="text" id="age" name="age" />
+                <td><input type="text" id="age" name="age" value="${user.age}"/>
             </tr>
             <tr>
                 <td><input type="submit" value="modify" />

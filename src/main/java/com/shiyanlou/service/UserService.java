@@ -13,6 +13,14 @@ public interface UserService {
      * @return 登录成功返回 User 对象，失败返回 null
      **/
     User login(User user);
+    
+    
+    /**
+	  * 根据id查询单个用户
+	  * 
+	  * @return  List<User>
+	 */
+	 User selectUserById(Integer id);
 
     /**
      * 查询所有用户

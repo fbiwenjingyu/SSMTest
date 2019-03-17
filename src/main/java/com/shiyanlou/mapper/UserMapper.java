@@ -14,6 +14,13 @@ public interface UserMapper {
 	 User selectLogin(User user);
 	 
 	 /**
+	  * 根据id查询单个用户
+	  * 
+	  * @return  List<User>
+	  */
+	 User selectUserById(Integer id);
+	 
+	 /**
 	  * 查询全部用户
 	  * 
 	  * @return  List<User>

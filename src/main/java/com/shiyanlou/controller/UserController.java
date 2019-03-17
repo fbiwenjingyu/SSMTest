@@ -71,7 +71,8 @@ public class UserController {
     @RequestMapping("/toupdateuser")
     public String toUpdateUser(@Param("id") Integer id,
                                HttpServletRequest request, Model model) {
-        model.addAttribute("user_id", id);
+    	User user = userService.selectUserById(id);
+        model.addAttribute("user", user);
         return "updateuser";
     }
     
